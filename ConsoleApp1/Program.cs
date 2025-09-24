@@ -63,10 +63,22 @@ namespace ConsoleApp1
             //    new Project() {Name="winforms",Description="Cst"  },
             //    new Project() {Name="loop",Description="Cst"  },
             //    new Project() {Name="collection",Description="Cst"  }
-               
+
             //);
             //db.SaveChanges();
             #endregion
+
+            #region Add Projects Employee
+            //db.ProjectEmployees.AddRange(
+            //    new ProjectEmployee() { EmpId = 1, ProId = 1, Note = "Done" },
+            //    new ProjectEmployee() { EmpId = 2, ProId = 2, Note = "Done" },
+            //    new ProjectEmployee() { EmpId = 3, ProId = 3, Note = "Done" },
+            //    new ProjectEmployee() { EmpId = 4, ProId = 4, Note = "Done" },
+            //    new ProjectEmployee() { EmpId = 5, ProId = 5, Note = "Done" }
+            //);
+            //db.SaveChanges();
+            #endregion
+
 
             #region Run SQL in EF
             //var result = db.Employees.FromSql($"select * from Employees"); //return select * only
@@ -128,7 +140,7 @@ namespace ConsoleApp1
             //foreach (var item in result)
             //{
             //    Console.WriteLine(item.FirstName);
-            //} 
+            //}
             #endregion
         }
     }
