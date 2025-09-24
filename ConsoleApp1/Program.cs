@@ -39,8 +39,22 @@ namespace ConsoleApp1
             //);
             //db.SaveChanges();
             #endregion
-         
-            
+
+            #region EployeeDetails
+
+            //db.EmployeeDetail.AddRange(
+            //    new EmployeeDetail() { EmpId = 1, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
+            //    new EmployeeDetail() { EmpId = 2, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
+            //    new EmployeeDetail() { EmpId = 3, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
+                                                             
+            //    new EmployeeDetail() { EmpId = 4, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
+            //    new EmployeeDetail() { EmpId = 5, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
+            //    new EmployeeDetail() { EmpId = 6, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
+            //    new EmployeeDetail() { EmpId = 7, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" }
+            //);
+            //db.SaveChanges();
+
+            #endregion
 
             #region Run SQL in EF
             //var result = db.Employees.FromSql($"select * from Employees"); //return select * only
