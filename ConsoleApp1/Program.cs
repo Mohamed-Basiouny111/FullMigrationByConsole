@@ -79,9 +79,8 @@ namespace ConsoleApp1
             //db.SaveChanges();
             #endregion
 
-
             #region Run SQL in EF
-            //var result = db.Employees.FromSql($"select * from Employees"); //return select * only
+            //var result = db.Employees.FromSql($"select * from Employee");
             //foreach (var item in result)
             //{
             //    Console.WriteLine(item.FirstName);
@@ -89,43 +88,43 @@ namespace ConsoleApp1
             #endregion
 
             #region tracking & AsNoTracking
-            //var emp = db.Employees.FirstOrDefault(e => e.Id == 1);
+            //var emp = db.Employees.FirstOrDefault(e => e.EmployeeId == 1);
             //Console.WriteLine(db.Entry(emp).State);//Unchanged
-            //emp.Name = "Mohamed Basiouny";
+            //emp.FirstName = "Muhammed Basiouny";
             //Console.WriteLine(db.Entry(emp).State);//Modified 
 
-            //var emp = db.Employees.AsNoTracking().FirstOrDefault(e => e.Id == 1);//can't add changes
-            //emp.Name = "Mohamed Basiouny";
+            //var emp = db.Employees.AsNoTracking().FirstOrDefault(e => e.EmployeeId == 1);//can't add changes
+            //emp.FirstName = "Mohamed Basiouny";
             //Console.WriteLine(db.Entry(emp).State);//Detached 
             #endregion
 
             #region Loading strategies
             //Eager Loading
-            //var dept = db.Departments.Include(e=>e.Employees).FirstOrDefault(e => e.Id == 1);
+            //var dept = db.Departments.Include(e => e.Employees).FirstOrDefault(e => e.DepartmentId == 1);
             //foreach (var item in dept.Employees)
             //{
-            //    Console.WriteLine(item.Name);
+            //    Console.WriteLine(item.FirstName);
             //}
 
             //Explicit Load
             //Collection
-            //var dept = db.Departments.FirstOrDefault(e => e.Id == 1);
+            //var dept = db.Departments.FirstOrDefault(e => e.DepartmentId == 1);
             //db.Entry(dept).Collection(c => c.Employees).Load();
             //foreach (var item in dept.Employees)
             //{
-            //    Console.WriteLine(item.Name);
+            //    Console.WriteLine(item.FirstName);
             //}
 
             //References
-            //var emp = db.Employees.FirstOrDefault(e => e.Id == 1);
-            //db.Entry(emp).Reference(e=>e.Department).Load();       
-            //Console.WriteLine(emp.Name);
+            //var emp = db.Employees.FirstOrDefault(e => e.EmployeeId == 1);
+            //db.Entry(emp).Reference(e => e.Department).Load();
+            //Console.WriteLine(emp.FirstName);
 
             //Lazy Load
-            //var dept = db.Departments.FirstOrDefault(e => e.Id == 1);
+            //var dept = db.Departments.FirstOrDefault(e => e.DepartmentId == 1);
             //foreach (var item in dept.Employees)
             //{
-            //    Console.WriteLine(item.Name);
+            //    Console.WriteLine(item.FirstName);
             //}
 
             #endregion
