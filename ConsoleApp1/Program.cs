@@ -12,6 +12,7 @@ namespace ConsoleApp1
             CompanyCodeFirstContext db = new();
             Console.WriteLine("Hello, World!");
             //  db.Database.EnsureDeleted();
+
             #region ِAddDepartment
             //db.Departments.AddRange(
             //    new Department() { Name = "IS", Description = "Hello" },
