@@ -16,6 +16,8 @@ namespace ConsoleApp1.Data
         public DbSet<FullTimeEmployee> FullTimeEmployees { get; set; }
         public DbSet<PartTimeEmployee> PartTimeEmployees { get; set; }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<ProjectEmployee> ProjectEmployees { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

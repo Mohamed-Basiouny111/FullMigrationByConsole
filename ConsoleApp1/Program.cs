@@ -46,7 +46,7 @@ namespace ConsoleApp1
             //    new EmployeeDetail() { EmpId = 1, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
             //    new EmployeeDetail() { EmpId = 2, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
             //    new EmployeeDetail() { EmpId = 3, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
-                                                             
+
             //    new EmployeeDetail() { EmpId = 4, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
             //    new EmployeeDetail() { EmpId = 5, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
             //    new EmployeeDetail() { EmpId = 6, Address = "23 jan , street", City = "Basioun", Zipcode = 123, State = "Africa", Country = "Cairo" },
@@ -54,6 +54,18 @@ namespace ConsoleApp1
             //);
             //db.SaveChanges();
 
+            #endregion
+
+            #region Add Projects
+            //db.Projects.AddRange(
+            //    new Project() {Name="Cst",Description="Cst"  },
+            //    new Project() {Name="entity",Description="Cst"  },
+            //    new Project() {Name="winforms",Description="Cst"  },
+            //    new Project() {Name="loop",Description="Cst"  },
+            //    new Project() {Name="collection",Description="Cst"  }
+               
+            //);
+            //db.SaveChanges();
             #endregion
 
             #region Run SQL in EF
