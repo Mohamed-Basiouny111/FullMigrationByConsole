@@ -41,6 +41,28 @@ namespace ConsoleApp1.Data
             //All Assembly
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(Employee).Assembly);
 
+            #region Use TPT strategy
+            //modelBuilder.Entity<Employee>()
+            //    .ToTable("Employees");   // جدول مشترك للخصائص العامة
+
+            //modelBuilder.Entity<FullTimeEmployee>()
+            //    .ToTable("FullTimeEmployees"); // الجدول ده بيحتوي على الأعمدة الإضافية لــ FullTimeEmployee
+
+            //modelBuilder.Entity<PartTimeEmployee>()
+            //    .ToTable("PartTimeEmployees"); // الجدول ده بيحتوي على الأعمدة الإضافية لــ PartTimeEmployee
+            #endregion
+
+            #region Use TPC strategy
+            //modelBuilder.Entity<Employee>()
+            //    .UseTpcMappingStrategy();  // مهم: يتعمل لمرة واحدة في الكلاس الأب
+
+            //modelBuilder.Entity<FullTimeEmployee>()
+            //    .ToTable("FullTimeEmployees");
+
+            //modelBuilder.Entity<PartTimeEmployee>()
+            //    .ToTable("PartTimeEmployees");
+            #endregion
+
             base.OnModelCreating(modelBuilder);
         }
     }
